@@ -1015,6 +1015,9 @@ blockquote {
   display: inline-block;
   vertical-align: top;
 }
+.line-break{
+  display: none;
+}
 
 .social-icon-link {
   background: var(--secondary-color);
@@ -1040,6 +1043,7 @@ blockquote {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
+
   h1 {
     font-size: 48px;
   }
@@ -1127,9 +1131,15 @@ blockquote {
     padding-top: 30px;
     padding-bottom: 0;
   }
+  .line-break{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .line-break{
+    display: none;
+  }
   h1 {
     font-size: 36px;
   }
@@ -1149,5 +1159,17 @@ blockquote {
   h5 {
     font-size: 20px;
   }
+  #alibhaie{
+    /* visibility: hidden; */
+    display: none;
+  }
 }
 
+@media only screen and (max-width: 1407px) and (min-width: 992px) {
+  /* #sikico{
+   display:none;
+ } */
+ .line-break{
+  display:inline;
+}
+} 
